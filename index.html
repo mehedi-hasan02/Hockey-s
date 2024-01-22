@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
     <style>
         .font-manrope{
             font-family: 'Manrope', sans-serif;
@@ -72,7 +77,7 @@
     </header>
     <main class="container mx-auto">
         <!-- professional club -->
-        <section class="mt-16 lg:mt-24">
+        <section class="mt-10 lg:mt-24">
             <div class="text-center px-5">
                 <h3 class="font-extrabold text-2xl lg:text-3xl mb-6">Professional Hockeys Club</h3>
                 <p class="lg:w-2/5 mx-auto opacity-60">Elite professional hockey clubs exemplify skill and teamwork on the ice, captivating global audiences with their thrilling performances.</p>
@@ -112,7 +117,96 @@
             </div>
         </section>
         <!-- program section -->
-        
+        <section class="mt-10 lg:mt-28">
+            <div class="text-center p-5">
+                <h3 class="text-xl lg:text-3xl font-extrabold">Program Sections</h3>
+                <p class="lg:w-1/2 mx-auto mt-6 opacity-60">Program Sections: Diverse offerings cater to varied interests and needs. Explore our curated sections designed for a personalized and enriching experience.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:w-3/4 mx-auto p-5">
+                <div class="relative w-full h-[230px] lg:h-[340px] bg-cover bg-center rounded-xl bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url(./Images/2.png)]">
+                    <div class="absolute left-10 bottom-10 text-white space-y-2">
+                        <h3 class="text-xl lg:text-2xl font-extrabold">Junior Program</h3>
+                        <p class="text-sm">Tailored activities for young learners, promoting growth and development.</p>
+                        <button class="btn  bg-[#FF4240] text-white border-none p-3 lg:px-5">Register Now!</button>
+                    </div>
+                </div>
+                <div class="relative w-full h-[230px] lg:h-[340px] bg-cover bg-center rounded-xl bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url(./Images/3.png)]">
+                    <div class="absolute left-10 bottom-10 text-white space-y-2 max-h-fit">
+                        <h3 class="text-xl lg:text-2xl font-extrabold">Teenager Program</h3>
+                        <p class="text-sm">Empowering teenagers through our specialized program, fostering growth and development.</p>
+                        <button class="btn  bg-[#FF4240] text-white border-none p-3 lg:px-5">Register Now!</button>
+                    </div>
+                </div>
+                <div class="relative lg:col-span-2 lg:w-full h-[230px] lg:h-[445px] bg-cover bg-center rounded-xl bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url(./Images/4.png)]">
+                    <div class="absolute left-10 bottom-10 text-white space-y-2">
+                        <h3 class="text-xl lg:text-2xl font-extrabold">Professional Program</h3>
+                        <p class="text-sm">Elevating skills through tailored, industry-focused curriculum and mentorship.</p>
+                        <button class="btn  bg-[#FF4240] text-white border-none p-3 lg:px-5">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product section -->
+        <section class="lg:mt-32 p-5">
+            <div class="text-center">
+                <h3 class="text-2xl lg:text-4xl font-extrabold mb-3">Our New Products</h3>
+                <p class="lg:w-1/2 mx-auto opacity-60">Explore our new products, delivering innovation and quality seamlessly. Elevate your experience with our latest offerings tailored for you.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:w-[73%] mx-auto mt-14 lg:mt-20">
+                <div class="flex flex-col lg:flex-row gap-5 items-center p-6 border-2 rounded-xl border-[rgba(19, 19, 24, 0.10)]">
+                    <div>
+                       <img class="w-[280px] h-[180px] lg:w-[180px] lg:h-[155px]" src="./Images/5.png" alt=""> 
+                    </div>
+                    <div class="">
+                       <div class="flex gap-x-4 items-center mb-2">
+                            <i class="text-amber-500 fa-solid fa-star"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                      </div> 
+                    
+                        <div>
+                        <h4 class="text-xl font-extrabold mb-2">World Cup Flags Football</h4> 
+                        </div>
+                        <div>
+                        <p class="opacity-60 mb-2">Global football celebration: Flags unite in the World Cup tournament.</p> 
+                        </div>
+                        <div class="flex gap-x-3">
+                            <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
+                            <p class="opacity-60"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
+                        </div> 
+                    </div>
+                    
+                </div>
+                <div class="flex flex-col lg:flex-row gap-5 items-center p-6 border-2 rounded-xl border-[rgba(19, 19, 24, 0.10)]">
+                    <div>
+                       <img class="w-[280px] h-[180px]  lg:w-[180px] lg:h-[155px]" src="./Images/5.png" alt=""> 
+                    </div>
+                    <div>
+                       <div class="flex gap-x-4 items-center mb-2 ">
+                            <i class="text-amber-500 fa-solid fa-star"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                      </div> 
+                    
+                        <div>
+                        <h4 class="text-xl font-extrabold mb-2">World Cup Flags Football</h4> 
+                        </div>
+                        <div>
+                        <p class="opacity-60 mb-2">Global football celebration: Flags unite in the World Cup tournament.</p> 
+                        </div>
+                        <div class="flex gap-x-3">
+                            <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
+                            <p class="opacity-60"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
