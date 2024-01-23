@@ -40,7 +40,7 @@
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold lg:px-0">Hockey<span class="text-[#FF4240]">'</span>s</a>
+                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold lg:px-0">Hockey<span class="text-[#FF4240] -mx-1">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -58,21 +58,36 @@
             </div>
             <!-- banner or carousel -->
             <div class="carousel w-full h-[200px] lg:h-[550px] mt-7 lg:mt-16 rounded-lg">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./Images/1.png" class="w-full bg-cover bg-center" />
+                <div id="slide1" class="carousel-item relative w-full bg-center bg-cover bg-[url(./Images/1.png)]">
+                  <!-- <img src="./Images/1.png" class="w-full bg-cover bg-center" /> -->
+                  <div class="hidden lg:inline-block lg:absolute space-y-2 lg:w-[25%] lg:h-[25%] bg-[#131318] rounded-xl text-white p-4 -bottom-20 lg:right-10 lg:bottom-10">
+                    <h4 class="text-xl font-extrabold">Meet all the heroes from the field</h4>
+                    <p class="opacity-60">Gather 'round and meet the heroes from the field,
+                        Champions in action, their dedication revealed.</p>
+                  </div>
                   <div class="absolute flex  transform -translate-y-1/2 left-[33%] bottom-0 lg:left-5 lg:bottom-5 gap-10">
-                    <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a> 
                     <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
                   </div>
                 </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="./Images/1.png" class="w-full" />
+                <div id="slide2" class="carousel-item relative w-full bg-center bg-cover bg-[url(./Images/4.png)]">
+                  <!-- <img src="./Images/4.png" class="w-full" /> -->
+                  <div class="hidden lg:inline-block lg:absolute space-y-2 lg:w-[25%] lg:h-[25%] bg-[#131318] rounded-xl text-white p-4 -bottom-20 lg:right-10 lg:bottom-10">
+                    <h4 class="text-xl font-extrabold">Meet all the heroes from the field</h4>
+                    <p class="opacity-60">Gather 'round and meet the heroes from the field,
+                        Champions in action, their dedication revealed.</p>
+                  </div>
                   <div class="absolute flex transform -translate-y-1/2 left-[33%] bottom-0 lg:left-5 lg:bottom-5 gap-10">
                     <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a> 
                     <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
                   </div>
                 </div> 
-              </div>
+            </div>
+            <div class="lg:hidden md:hidden inline-block lg:absolute space-y-2 lg:w-[25%] lg:h-[25%] bg-[#131318] rounded-xl text-white p-4 -bottom-20 lg:right-10 lg:bottom-10">
+                <h4 class="text-xl font-extrabold">Meet all the heroes from the field</h4>
+                <p class="opacity-60">Gather 'round and meet the heroes from the field,
+                    Champions in action, their dedication revealed.</p>
+            </div>
         </div>
     </header>
     <main class="container mx-auto">
@@ -319,7 +334,7 @@
         </section>
 
         <!-- FAQ section -->
-        <section class="mt-12 lg:mt-32">
+        <section class="mt-12 lg:mt-32 p-5">
             <div class="text-center">
                 <h3 class="text-2xl lg:text-4xl font-extrabold">Clients Question</h3>
                 <p class="lg:w-[70%] mx-auto opacity-60 mt-5">Client questions are vital cues for understanding their needs, enabling businesses to provide tailored solutions. Prompt and comprehensive responses contribute to building trust and fostering positive client relationships.</p>
@@ -418,10 +433,115 @@
                 
             </div>
         </section>
-        
+        <!-- contact form -->
+        <section class="mt-10 lg:mt-32">
+            <div class="text-center p-5">
+                <h3 class="text-xl lg:text-4xl font-extrabold">Get In Touch</h3>
+                <p class="lg:w-[65%] mx-auto mt-5 opacity-60">Ready to connect? Feel free to get in touch with us for inquiries, assistance, or collaboration. We look forward to hearing from you and addressing any questions or concerns you may have.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-10 lg:mx-40 mt-12 p-5">
+                <div class=" flex flex-col gap-8 border border-[rgba(19, 19, 24, 0.10)] rounded-xl p-6 lg:p-10">
+                    <div class="bg-lime-100 p-8 rounded-xl space-y-4">
+                        <img src="./Images/Group 1171275317.png" alt="">
+                        <p>Phone Number :</p>
+                        <p>(+62) 123-321-543</p>
+                    </div>
+                    <div class="bg-[#FDDD5F1A] p-8 rounded-xl space-y-4">
+                        <img src="./Images/Group 1171275318.png" alt="">
+                        <p>Email :</p>
+                        <p>hockeys@support.com</p>
+                    </div>
+                    <div class="bg-[#629CF31A] p-8 rounded-xl space-y-4">
+                        <img src="./Images/Group 1171275321.png" alt="">
+                        <p>Location :</p>
+                        <p>152/1 Mohakhali Wireless Gate</p>
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div>
+                           <label class="text-xl font-bold" for="">Your Name</label>
+                           <input type="text" placeholder="Enter your full name" class="input  bg-stone-100 w-full mt-4" /> 
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Your Email</label>
+                            <input type="text" placeholder="Enter your email" class="input bg-stone-50 w-full mt-4" />
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Subject</label>
+                            <input type="text" placeholder="Enter your subject" class="input bg-stone-100 w-full mt-4" /> 
+                         </div>
+                         <div>
+                             <label class="text-xl font-bold" for="">Phone Number</label>
+                             <input type="text" placeholder="Enter your Phone number" class="input bg-stone-100 w-full my-4"/>
+                         </div>
+                         
+                    </div>
+                    <div>
+                        <label class="text-xl font-bold" for="">Message</label>
+                        <textarea class="textarea bg-stone-100 w-full h-[200px] lg:h-[370px] mt-4" placeholder="Write your message"></textarea>
+                     </div>
+                     <div>
+                        <button class="btn bg-[#FF4240] text-white w-full mt-8">Secondary</button>
+                     </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- social media -->
+        <section class="mt-8 lg:mt-12 p-5">
+            <div class="lg:mx-40 bg-stone-50 flex flex-col justify-center items-center p-6 rounded-xl">
+                <div>
+                    <h3 class="text-2xl font-extrabold">Social Media</h3>
+                </div>
+                <div class="space-x-6 mt-6">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <!-- footer -->
+    <footer class="mt-10 lg:mt-24">
+        <div class="flex flex-wrap gap-10 bg-[#131318] text-white p-20 text-center lg:text-left">
+            <div class="flex-1 lg:ml-36 space-y-2 lg:mr-40 space-y-2">
+                <h3 class="text-2xl font-extrabold">Get In Touch</h3>
+                <p class="opacity-60">Feel free to connect, whether through messages or calls, Questions or concerns, assistance that enthralls. </p>
+                <p class="opacity-60"><i class="text-[#FF4240] mr-2 fa-regular fa-envelope"></i> hockeys@support.com</p>
+                <p class="opacity-60"><i class="text-[#FF4240] mr-2 fa-solid fa-phone"></i> (+62) 123-321-543</p>
+            </div>
+            <div class="flex-1 space-y-5">
+                <h4 class="text-xl font-[700]">Company</h4>
+                <ul class="opacity-60 space-y-3">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Leadership</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">News & Article</a></li>
+                    <li><a href="">Legal Notice</a></li>
+                </ul>
+            </div>
+            <div class="flex-1 space-y-5">
+                <h4 class="text-xl font-[700]">Support</h4>
+                <ul class="opacity-60 space-y-3">
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Ticket Support</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="lg:flex-1 space-y-5 sm:m-0 ml-[23%]">
+                <h4 class="text-xl font-[700]">Services</h4>
+                <ul class="opacity-60 space-y-3">
+                    <li><a href="">Academy</a></li>
+                    <li><a href="">Group Lesson</a></li>
+                    <li><a href="">Private Lesson</a></li>
+                    <li><a href="">Hockeys For Kids</a></li>
+                    <li><a href="">Hockeys For Adult</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
